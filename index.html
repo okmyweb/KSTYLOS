@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Peluquería</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff7043;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #252121;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ff8a65;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ebe0ff;
+        }
+
+        .main-banner {
+            background-image: url('1.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: #fefefe; /* Blanco delicado */
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .main-banner h2 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .main-banner p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #ff7043;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #9c93a1;
+        }
+
+        .services-section {
+            padding: 20px;
+            background-color: #d8a3df;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffaf7a;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-card {
+            width: 300px;
+            background-color: #da65adcb;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(206, 56, 56, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 400px;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            padding: 0 15px;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .service-card .btn-primary {
+            margin: 0 auto 20px; /* Alinear el botón */
+            display: block;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ff7043;
+            color: #ffffffdc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff3e0;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ca8f35;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> B&B KSTYLOS - Peluquería</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Promociones</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section class="main-banner">
+        <h2>¡Luce espectacular hoy!</h2>
+        <p>Descubre nuestros servicios de peluquería profesional y personalizada.</p>
+        <a href="#" class="btn-primary">Reserva tu cita ahora</a>
+    </section>
+
+    <section class="services-section">
+        <h2>Servicios Destacados</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images.jpg" alt="Corte de Cabello">
+                <h3>Corte de Cabello</h3>
+                <p>Elige entre estilos clásicos o modernos con nuestros expertos estilistas.</p>
+                <a href="#" class="btn-primary">Reservar</a>
+            </div>
+            <div class="service-card">
+                <img src="coloracion.jpg" alt="Coloración">
+                <h3>Coloración</h3>
+                <p>Dale vida a tu cabello con nuestros tintes y técnicas de color únicas.</p>
+                <a href="#" class="btn-primary">Reservar</a>
+            </div>
+            <div class="service-card">
+                <img src="tratamiento.jpg" alt="Tratamientos Capilares">
+                <h3>Tratamientos Capilares</h3>
+                <p>Recupera la salud y brillo de tu cabello con tratamientos personalizados.</p>
+                <a href="#" class="btn-primary">Reservar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contáctanos: <a href="mailto:info@estiloperfecto.com">info@estiloperfecto.com</a> | Tel: +57 300 123 4567</p>
+        <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
