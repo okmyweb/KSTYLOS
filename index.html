@@ -153,11 +153,45 @@
         footer a:hover {
             color: #ca8f35;
         }
+
+        .calculation-section {
+            background-color: #ffefdb;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .calculation-section input {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px;
+            width: 150px;
+        }
+
+        .calculation-section button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff7043;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .calculation-section button:hover {
+            background-color: #e55a39;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff7043;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1> LA PELUQUERIA DE ROBIN LOPEZ - Peluquería</h1>
+        <h1> B&B KSTYLOS - Peluquería</h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -196,14 +230,42 @@
         </div>
     </section>
 
+    <section class="calculation-section">
+        <h2>Calcula el Precio de tu Servicio</h2>
+        <label for="value1">Valor 1:</label>
+        <input type="number" id="value1" placeholder="Ingresa un valor" required>
+        <br>
+        <label for="value2">Valor 2:</label>
+        <input type="number" id="value2" placeholder="Ingresa otro valor" required>
+        <br>
+        <button onclick="calculateResult()">Calcular</button>
+
+        <div class="result" id="result"></div>
+    </section>
+
     <footer>
-        <p>Contáctanos: <a href="mailto:info@estiloperfecto.com">kstylos@peluqueria.com</a> | Tel: +57 000 123 4567</p>
+        <p>Contáctanos: <a href="mailto:info@estiloperfecto.com">info@kst.com</a> | Tel: +57 300 123 4567</p>
         <div>
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
+
+    <script>
+        function calculateResult() {
+            const value1 = parseFloat(document.getElementById("value1").value);
+            const value2 = parseFloat(document.getElementById("value2").value);
+            const resultElement = document.getElementById("result");
+
+            if (isNaN(value1) || isNaN(value2)) {
+                resultElement.textContent = "Por favor ingresa dos valores válidos.";
+            } else {
+                const result = value1 + value2; // O cualquier operación que necesites
+                resultElement.textContent = "El resultado es: " + result;
+            }
+        }
+    </script>
 </body>
 </html>
 
